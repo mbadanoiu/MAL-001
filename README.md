@@ -22,7 +22,7 @@ More details and the exploitation process can be found in this [PDF](https://git
 
 Initial [vulnerability (CVE-2020-13445)](https://nvd.nist.gov/vuln/detail/CVE-2020-13445) and [blogpost](https://securitylab.github.com/advisories/GHSL-2020-043-liferay_ce/) by [Alvaro "pwntester" Munoz](https://github.com/pwntester) that inspired the SSTI research and finding of this vulnerability.
 
-HSQL RCE was inspired by the blogpost ["Remote Code Execution in F5 Big‑IP" by Mikhail Klyuchnikov](https://swarm.ptsecurity.com/rce-in-f5-big-ip/).
+HSQL RCE vector was inspired by the blogpost ["Remote Code Execution in F5 Big‑IP" by Mikhail Klyuchnikov](https://swarm.ptsecurity.com/rce-in-f5-big-ip/).
 
 ### Timeline:
 
@@ -30,5 +30,5 @@ HSQL RCE was inspired by the blogpost ["Remote Code Execution in F5 Big‑IP" by
 - Vulnerability was considered a non-issue as "permission to edit templates should only be granted to trusted users"
 - Retested the vulnerability on 18-Jan-2023 and noticed that:
   - The Arbitrary File Read and SSRF vectors have been patched
-  - The RCE had been remediated by then HSQL patch for CVE-2022-41853
+  - The RCE had been remediated by the HSQL patch for CVE-2022-41853
 - Publically disclosed the vulnerability on 03-Jan-2024
